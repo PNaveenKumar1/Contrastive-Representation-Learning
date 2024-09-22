@@ -33,9 +33,14 @@ To run the project, ensure you have the latest stable version of PyTorch install
 - **Fine-tuning**: Fine-tuned the encoder with additional layers and achieved significant performance improvements compared to the frozen model.
 
 ## Triplet Loss
+
+I had used the Margin Triplet loss during the training of the encoder model.This loss function is in-built in pytorch, and used that for the loss function for the model training and evaluation
+ 
 L(a,p,n) = max{d(ai,pi) − d(ai,ni) + margin,0}
 
- d(xi,yi) = ∥xi − yi∥p
+         d(xi,yi) = ∥xi − yi∥p
+
+This is used for measuring a relative similarity between samples. A triplet is composed of an anchor a, positive examples p, and negative examples n, where a, p, and n are input tensors x1, x2, and x3 respectively, and the margin has a value greater than 0.
 ## How to Run
 
 To run the code:
