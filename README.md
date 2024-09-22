@@ -32,19 +32,24 @@ To run the project, ensure you have the latest stable version of PyTorch install
 - **t-SNE Plot**: Visualized the learned vector space of the encoder using t-SNE, showing distinct class clusters (saved as `1.3.png`).
 - **Fine-tuning**: Fine-tuned the encoder with additional layers and achieved significant performance improvements compared to the frozen model.
 
+## Triplet Loss
+\(L(a,p,n) = \max\{d(a_i,p_i) − d(a_i,n_i) + \text{margin}, 0\}\)
+
+\(d(x_i,y_i) = \|x_i − y_i\|_p\)
+
 ## How to Run
 
 To run the code:
 
 1. For Softmax regression:
     ```bash
-    python run.py <SR number> --mode softmax <hyperparameters>
+    python run.py <22915> --mode softmax <hyperparameters>
     ```
 2. For Contrastive Representation Learning:
     ```bash
-    python run.py <SR number> --mode cont_rep <hyperparameters>
+    python run.py <22915> --mode cont_rep <hyperparameters>
     ```
-
+Hyperparameters were mentioned in the Report
 ## Results
 
 - **Softmax Regression**: Achieved over 80% accuracy on binary logistic regression and comparable results for multi-class classification.
@@ -54,5 +59,5 @@ Plots and results are included in the report.
 
 ## Report
 
-The detailed report for this assignment is available in the repository as `Report_<SR number>.pdf`.
+The detailed report for this assignment is available in the repository as `Report_<22915>.pdf`.
 
