@@ -37,6 +37,10 @@ To run the project, ensure you have the latest stable version of PyTorch install
 
 \(d(x_i,y_i) = \|x_i − y_i\|_p\)
 
+
+
+L(a,p,n) = max{d(ai,pi) − d(ai,ni) + margin,0}
+ d(xi,yi) = ∥xi − yi∥p
 ## How to Run
 
 To run the code:
